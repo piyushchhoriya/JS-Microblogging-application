@@ -1,0 +1,183 @@
+
+// SCSS for different sections of page
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// For image
+.imgs {
+  border-radius: $border-radius;
+  max-height: 200px;
+}
+
+// For col1 and col2
+.col1, .col2 {
+  margin-left: $margin-default;
+  margin-right: $margin-default;
+  
+  &.col1 {
+    margin-top: $margin-top-default;
+    height: 100px;
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+// Header Styles 
+.div1 {
+  background-color: black;
+  color: white;
+  height: 62px;
+  width: 100%;
+  display: flex;
+  padding: 1%;
+  border-radius: $border-radius;
+  justify-content: space-between;
+}
+
+.edit, .blog {
+  background-color: black;
+  border-radius: $border-radius;
+}
+
+// Blog SCSS
+.blog {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  height: 50px;
+  width: 215px;
+  font-size: 30px;
+}
+
+/* Blog Post Styles */
+.data2 {
+  color: black;
+}
+
+.content {
+  max-height: 200px; 
+   /* Hide overflow content */
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out; 
+  color: black;
+  // Background color for the content 
+  background-color: #f9f9f9;
+  padding: 10px;
+  // border around each blog post 
+  border: 1px solid #ccc; 
+  margin: 10px 0;
+  border-radius: $border-radius;
+}
+
+.content1 {
+  @extend .content;
+  overflow: hidden;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  @include Content;
+}
+
+.close {
+  color: #888;
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Button Styles */
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    background-color: #0056b3;
+  }
+}
+
+/* Input Field Styles */
+input[type="text"], textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+}
+
+/* Content Container Styles */
+#data1 {
+  margin: 20px;
+}
+
+/* Responsive Styles (adjust as needed) */
+@media screen and (max-width: 600px) {
+  .div2 {
+    margin-right: 15%;
+  }
+}
+
+.main {
+  display: flex;
+  background-color: blanchedalmond;
+  border-radius: $border-radius;
+  margin-top: 2%;
+  padding: 1%;
+}
+
+// Login page scss is:
+.login-container {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: $border-radius;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  .login-form {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: $border-radius;
+  }
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: $border-radius;
+    cursor: pointer;
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+}

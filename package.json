@@ -1,0 +1,19 @@
+{
+  "name": "assignment-6-piyush-chhoriya",
+  "version": "1.0.0",
+  "description": "[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/MqXF68Ca)",
+  "main": "index.js",
+  "scripts": {
+    "sass-dev": "npx sass scss/main.scss dist/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/info-6150-fall-2023/assignment-6-piyush-chhoriya.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/info-6150-fall-2023/assignment-6-piyush-chhoriya/issues"
+  },
+  "homepage": "https://github.com/info-6150-fall-2023/assignment-6-piyush-chhoriya#readme"
+}

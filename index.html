@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 6</title>
+    <link rel="stylesheet" href="scss/main.css">
+ </head>
+<body>
+    <!-- Body tag starts -->
+    <header>
+        <!-- Header section with logo and login link -->
+        <div class="div1">
+           <div class="div2">
+            <h1>My Blogs..</h1>
+           </div>
+           <div class="div3">
+            <h1><a href="login.html">Login</a></h1>
+           </div>
+           
+        </div>
+    </header>
+    <div id="data1">
+          <!-- Container for displaying blogs -->
+    </div>
+    <br>
+    <button id="createBlogButton" class="blog">Create Blog</button>
+    <br>
+
+<div id="createBlogModal" class="modal">
+    <div class="modal-content">
+        <!-- creating a new blog -->
+        <span class="close" id="closeModal">&times;</span>
+        <input type="text" id="blogTitle" class="input-field hidden" placeholder="Title" >
+        <input type="text" id="blogAuthor" class="input-field hidden" placeholder="Author">
+        <textarea id="blogContent" class="input-field hidden" placeholder="Content"></textarea>
+        <input type="text" id="blogImage" class="input-field hidden" placeholder="Image URL" >
+        <input type="text" id="blogDate" class="input-field hidden" placeholder="Date" >
+        <input type="text" id="blogTime" class="input-field hidden" placeholder="Time" >
+
+        <button id="showFields">Create Blog</button>
+        <button id="saveBlog" class="hidden">Save</button>
+    </div>
+</div>
+<!-- external JavaScript file -->
+    <script src="js/main.js"> </script>
+    
+    
+</body>
+    <!-- Body tag ends -->
+</html>
